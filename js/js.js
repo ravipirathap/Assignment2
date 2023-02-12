@@ -39,7 +39,7 @@
     var center = {lat: 37.7749, lng: -122.4194};
     // The map options
     var options = {
-    zoom: 8,
+    zoom: 20,
     center: center
     };
     // Create a new map
@@ -78,4 +78,27 @@ function validate(){
     }
         
  }
+//form end
+//error 404
+// Get the "service" link
+var serviceLink = document.querySelector("#error");
 
+// Add an event listener to the link
+serviceLink.addEventListener("click", function(event) {
+  event.preventDefault(); // prevent the default behavior of the link
+  
+  // Change the URL path to "/404"
+  window.history.pushState({}, "", "/404");
+
+  // Write the 404 error message
+  document.write("404: Page Not Found");
+});
+//page loader
+    const loader = document.getElementById("loader");
+    window.addEventListener("load", function() {
+    setTimeout(function() {
+        loader.style.display = "none";
+        content.style.display = "block";
+    }, 1000);
+    });
+//page loader
