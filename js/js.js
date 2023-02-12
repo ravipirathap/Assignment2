@@ -12,7 +12,6 @@
 //caurosel start
     let slideIndex = 0;
     showSlides();
-
     function showSlides() {
     let i;
     let slides = document.getElementsByClassName("slide");
@@ -33,3 +32,50 @@
         document.querySelector("#anime").style.transform = "scale(1)";
     }
 //zoom in zoom out end
+//map start
+    // Inita map
+    function initMap() {
+    //map location
+    var center = {lat: 37.7749, lng: -122.4194};
+    // The map options
+    var options = {
+    zoom: 8,
+    center: center
+    };
+    // Create a new map
+    var map = new google.maps.Map(document.getElementById("map"), options);
+    }
+//map end
+//form start
+function validate(){
+    var fn=document.getElementById("fn").value;
+    var ln=document.getElementById("ln").value;
+    var email=document.getElementById("email").value;
+    var phone=document.getElementById("phone").value;
+    var re1=/^[A-Za-z.]{2,23}$/;
+    var re2= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var re4=/^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+    if (re1.test(fn)){
+        document.getElementById("t1").innerHTML=""; 
+    }else{
+        document.getElementById("t1").innerHTML="Name must be between 2 and 23 characters";
+    }
+    if (re1.test(ln)){
+        document.getElementById("t2").innerHTML=""; 
+    }else{
+        document.getElementById("t2").innerHTML="Name must be between 2 and 23 characters";
+    }
+    if(re2.test(email)){
+        document.getElementById("t3").innerHTML=""; 
+    }else{
+        document.getElementById("t3").innerHTML="Email is invalid";
+    }
+    if(re4.test(phone)){
+        document.getElementById("t4").innerHTML=""; 
+    }else{
+        document.getElementById("t4").innerHTML="Phone Number is invalid";
+        return false
+    }
+        
+ }
+

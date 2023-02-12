@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <section style="background-color:rgb(160, 80, 235)">
+        <h3 style="text-align:center ;">Drop Us Mail</h3> 
+        <div class="d-flex justify-content-evenly" > 
+            <div style="padding-top:100px; padding-bottom:50px;">
+               <div id="map" ></div>
+            </div>
+            <div class="sec3i">
+                <div  class="d-flex flex-column bd-highlight mb-3" style="padding-left: 20px;">
+                    <h3 class="col">AllWoodIN</h3>
+                    <address class="row">
+                        3,2 Galle Rd, Colombo 00300<br>
+                        <h5 class="row"> Phone:-</h5> 0761547018<br>
+                        <h5 class="row"> Email:-</h5> ravipirathap0715@gmail.com
+                    </address>
+                </div>
+            <div class="d-flex flex-column bd-highlight mb-3">
+                <form action="" onsubmit="return validate()">
+                    <h4>Want to Know More??Drop Us a Mail.</h4>
+                    <div>
+                    <input type="text" placeholder="First Name" id="fn">
+                    <input type="text" placeholder="Last Name" id="ln" ><br><br>
+                        <div class="d-flex justify-content-between" width="100px">
+                            <p id="t1" class="p-2 "></p>
+                            <p id="t2" class="p-2 "></p>
+                        </div>
+                    </div>
+                        <div>
+                            <input type="text" placeholder="Email" id="email">
+                            <input type="text" placeholder="Contact Number" id="phone"><br><br>
+                            <div class="d-flex justify-content-between order" width="200px">
+                                <div class="p-2 order-0" width="auto"><p id="t3" ></p></div>
+                                <div class="p-2 order-1"><p id="t4" ></p></div>
+                            </div>
+                        </div>
+                        <textarea name="message" id="t1" cols="30" rows="10" placeholder="Your msg here"></textarea><br><br>
+                        <input type="submit" value="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBTsw3a0xr_gDG89PMwd99dpxoE-y45A&callback=initMap">
+    </script>
+    <script src="js/js.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
