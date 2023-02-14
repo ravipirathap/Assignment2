@@ -21,7 +21,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item" id="active1"><input type="text" placeholder="AllWoodIN"></li>
                     <li class="nav-item" id="active1"><a class="nav-link" href="#">Home</a></p></li>
-                    <li class="nav-item" id="active1"><a class="nav-link" href="#">About Us</a></p></li>
+                    <li class="nav-item" id="active1"><a class="nav-link" href="contact.html" target="_self">About Us</a></p></li>
                     <li class="nav-item" id="active1"><a class="nav-link" id="error" href="#">Services</a></p></li>
                     <li class="nav-item" id="active1"><a class="nav-link" href="#">Portfolio</a></p></li>
                     <li class="nav-item" id="active1"><a class="nav-link" href="#">Team</a></p></li>
@@ -40,28 +40,29 @@
         </section><br>
         <section>
             <div class="d-flex justify-content-evenly" style="background-color: rgb(234, 242, 250);">
-                    <div class="slide">
-                      <img src="images/1.jpeg" height="300" width="300">
-                    </div>
+                <div class="slide" id="fade">
+                    <img src="images/1.jpeg" height="300" width="300">
+                </div>
                     
-                    <div class="slide">
-                      <img src="images/2.jpeg" height="300" width="300">
-                    </div>
+                <div class="slide" id="fade">
+                    <img src="images/2.jpeg" height="300" width="300">
+                </div>
                     
-                    <div class="slide">
-                      <img src="images/1.jpeg" height="300" width="300">
-                    </div>
+                <div class="slide" id="fade">
+                    <img src="images/1.jpeg" height="300" width="300">
+                </div>
                 <div class="order-0" >
                     <h3>Better Digital Experience with AllWoodIN</h3>
-                    <p>We are team of Delivering all woo item island wide</p>
+                    <h5>We are team of Delivering all woo item island wide</h5>
                     <input type="submit" value="Get Started" class="btn btn-danger" id="btn2">
                 </div>
             </div>
+            
         </section><br>
         <section>
             <div class="d-flex justify-content-evenly" style="background-color: rgb(213, 243, 239);">
                 <div>
-                    <img src="images/wood1.webp" height="300" width="300" id="anime" onmouseover="zoom()" onmouseout="zoomout()">
+                    <img src="images/wood1.webp" height="300" width="300" id="anime">
                 </div>
                 <div class="sec3i">
                     <div  class="d-flex flex-column bd-highlight mb-3">We are providing e-wood items island wide.</div>
@@ -78,25 +79,34 @@
             <h2>Check Our Items here</h2>
         </div><br>
         <div class="d-flex justify-content-evenly" style="background-color:rgb(154, 240, 211);">
-            <a class="nav-link all" aria-current="page" href="#"  style="color:rgb(253, 102, 47);">All</a>
-            <a class="nav-link active app" href="#">App</a>
-            <a class="nav-link active Card" aria-current="page" href="#">Card</a>
-            <a class="nav-link active web" aria-current="page" href="#">Web</a>
+            <button class="but" id="all">All</button>
+            <button class="but" id="web">Web</button>
+            <button class="but" id="app">App</button>
+            <button class="but" id="design">Design</button>
         </div><br><br>
         <div class="d-flex justify-content-evenly">
-            <a href="Product.html"><img src="images/product1.jpeg" class="d-flex justify-content-start img" height="350" width="300"></a>
-            <img src="images/product2.jpeg" class="d-flex justify-content-center img" height="350" width="300">
-            <img src="images/product3.jpeg" class="d-flex justify-content-end img" height="350" width="300">
+            <div class="item web">
+           <img src="images/product1.jpeg" class="d-flex justify-content-start img" height="350" width="300"></div>        
+            <div class="item web">
+            <img src="images/product2.jpeg" class="d-flex justify-content-center img" height="350" width="300"></div>
+            <div class="item web">           
+            <img src="images/product3.jpeg" class="d-flex justify-content-end img" height="350" width="300"></div>
         </div><br><br>
         <div class="d-flex justify-content-evenly">
-            <img src="images/product4.jpeg" class="d-flex justify-content-start img" height="350" width="300">
-            <img src="images/product5.jpeg" class="d-flex justify-content-center img" height="350" width="300">
-            <img src="images/product6.jpeg" class="d-flex justify-content-end img" height="350" width="300">
+            <div class="item app">
+            <img src="images/product4.jpeg" class="d-flex justify-content-start img" height="350" width="300"></div>
+            <div class="item app">
+            <img src="images/product5.jpeg" class="d-flex justify-content-center img" height="350" width="300"></div>
+            <div class="item app">
+            <img src="images/product6.jpeg" class="d-flex justify-content-end img" height="350" width="300"></div>
         </div><br><br>
         <div class="d-flex justify-content-evenly">
-            <img src="images/product7.jpeg" class="d-flex justify-content-start img" height="350" width="300">
-            <img src="images/product8.jpeg" class="d-flex justify-content-center img" height="350" width="300">
-            <img src="images/product9.jpeg" class="d-flex justify-content-end img" height="350" width="300">
+            <div class="item design">
+            <img src="images/product7.jpeg" class="d-flex justify-content-start img" height="350" width="300"></div>
+            <div class="item design">
+            <img src="images/product8.jpeg" class="d-flex justify-content-center img" height="350" width="300"></div>
+            <div class="item design">
+            <img src="images/product9.jpeg" class="d-flex justify-content-end img" height="350" width="300"></div>
         </div>
     </section><br>
     <section>

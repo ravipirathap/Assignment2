@@ -31,6 +31,15 @@ padding-left: 20px;}
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.slide{
+    animation: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from{opacity: .6}
+    to{opacity: 1}
+
+}
 #map {
     height: 600px;  
     width: 600px;  
@@ -38,3 +47,16 @@ padding-left: 20px;}
 p{ 
     color:red
 }
+#ani1 {
+    position: relative;
+    animation: slidein 3s forwards;
+  }
+
+  @keyframes slidein {
+    from {
+      left: -100%;
+    }
+    to {
+      left:0;
+    }
+  }

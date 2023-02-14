@@ -1,0 +1,9 @@
+// var API_KEY = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBTsw3a0xr_gDG89PMwd99dpxoE-y45A&callback=initMap"
+
+// fetch("https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBTsw3a0xr_gDG89PMwd99dpxoE-y45A&callback=initMap")
+//   .then(response => response.json())
+//   .then(data => {
+//     // Do something with the data
+//   });
+var map1= document.getElementById("map1");
+map1.setAttribute("src","https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBTsw3a0xr_gDG89PMwd99dpxoE-y45A&callback=initMap");
